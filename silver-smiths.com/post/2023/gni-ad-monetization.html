@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="구글코리아 GNI 워크숍 요약: 매체사의 트래픽 및 광고 수익 증대 전략(CPM, Fill rate, Viewability), AdSense 및 Ad Manager 기초 활용법, 그리고 게시자 정책(무효 트래픽 방지 등) 준수 가이드." />
+    <meta name="keywords" content="구글 GNI, 광고 수익화, CPM, 애드센스, 애드매니저, 무효 트래픽, 코어 웹 바이탈, 퍼블리셔 정책, 실버스미스" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <meta name="author" content="Silversmith" />
+    <link rel="canonical" href="https://silver-smiths.com/post/2023/gni-ad-monetization.html" />
+    <link rel="alternate" hreflang="ko" href="https://silver-smiths.com/post/2023/gni-ad-monetization.html" />
+    <link rel="alternate" hreflang="x-default" href="https://silver-smiths.com/post/2023/gni-ad-monetization.html" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://silver-smiths.com/post/2023/gni-ad-monetization.html" />
+    <meta property="og:title" content="구글코리아 GNI 워크숍: 퍼블리셔 광고 수익화 A to Z — Silversmith" />
+    <meta property="og:description"
+        content="구글 GNI 워크숍을 통해 알아본 트래픽/광고 수익 증대 전략, 애드센스/애드매니저 기초, 그리고 무효 트래픽 등 게시자 정책 위반 방지 가이드입니다." />
+    <meta property="og:image" content="https://silver-smiths.com/images/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Silversmith 대표 이미지" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="Silversmith" />
+    <meta property="article:published_time" content="2023-10-26T00:00:00+09:00" />
+    <meta property="article:author" content="Silversmith" />
+    <meta property="article:section" content="Ad Monetization" />
+    <meta property="article:tag" content="광고 수익화, GNI, 애드센스, 애드매니저, 정책" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="구글코리아 GNI 워크숍: 퍼블리셔 광고 수익화 A to Z — Silversmith" />
+    <meta name="twitter:description" content="구글 GNI 워크숍을 통해 알아본 광고 수익 최적화와 계정/무효트래픽 정책 가이드." />
+    <meta name="twitter:image" content="https://silver-smiths.com/images/og-image.png" />
+
+    <title>구글코리아 GNI 워크숍: 퍼블리셔 광고 수익화 A to Z — Silversmith</title>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://silver-smiths.com/post/2023/gni-ad-monetization.html#webpage",
+          "url": "https://silver-smiths.com/post/2023/gni-ad-monetization.html",
+          "name": "구글코리아 GNI 워크숍: 퍼블리셔 광고 수익화 A to Z — Silversmith",
+          "description": "구글코리아 GNI 워크숍 요약: 매체사의 트래픽 및 광고 수익 증대 전략, 애드센스와 애드매니저의 차이점, 무효 트래픽 등 게시자 정책 위반 가이드를 제공합니다.",
+          "isPartOf": { "@id": "https://silver-smiths.com/#website" },
+          "about": { "@id": "https://silver-smiths.com/#org" }
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://silver-smiths.com/post/2023/gni-ad-monetization.html",
+    "headline": "구글코리아 GNI 워크숍: 퍼블리셔 광고 수익화 A to Z",
+    "description": "구글코리아 GNI 워크숍 요약: 매체사의 트래픽 및 광고 수익 증대 전략, 애드센스와 애드매니저의 차이점, 무효 트래픽 등 게시자 정책 위반 가이드를 제공합니다.",
+    "author": { "@type": "Organization", "@id": "https://silver-smiths.com/#org", "name": "Silversmith" },
+    "publisher": { "@type": "Organization", "@id": "https://silver-smiths.com/#org" },
+    "datePublished": "2023-10-26",
+    "dateModified": "2023-10-26",
+    "url": "https://silver-smiths.com/post/2023/gni-ad-monetization.html",
+    "image": "https://silver-smiths.com/images/og-image.png",
+    "inLanguage": "ko",
+    "keywords": ["광고 수익화", "구글", "GNI", "CPM", "애드센스", "애드매니저"],
+    "isPartOf": { "@type": "WebSite", "@id": "https://silver-smiths.com/#website" }
+  }
+  </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MQT4J6J');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;700&family=Inter:wght@400;500;700&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;700&family=Inter:wght@400;500;700&display=swap" />
+    </noscript>
+    <link rel="preload" href="../../css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="preload" href="../../css/pages.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+        <link rel="stylesheet" href="../../css/style.css" />
+        <link rel="stylesheet" href="../../css/pages.css" />
+    </noscript>
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            background: #080d1a;
+            color: #d4daf0;
+            font-family: 'Noto Sans KR', 'Inter', sans-serif;
+            height: auto !important;
+            overflow: auto !important;
+        }
+
+        #main-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 500;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem clamp(1.25rem, 4vw, 2.5rem);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background: rgba(8, 13, 26, .88);
+            border-bottom: 1px solid rgba(148, 163, 210, .12);
+        }
+
+        .nav-logo {
+            font-size: 1.4rem;
+            font-weight: 800;
+            letter-spacing: -.04em;
+            background: linear-gradient(135deg, #c8cdd6, #e8ecf4, #a8b0c0, #d0d8e8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQT4J6J" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <header>
+        <nav id="main-nav" aria-label="주 내비게이션">
+            <a href="../../index.html" class="nav-logo" aria-label="Silversmith 홈">Silver<span>smith</span></a>
+            <ul class="nav-links" role="list">
+                <li class="nav-group">
+                    <a href="../../index.html#consulting">컨설팅 <svg width="12" height="12" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg></a>
+                    <div class="nav-dropdown">
+                        <a href="../../consulting/seo-aeo-geo.html">SEO / AEO / GEO</a>
+                        <a href="../../consulting/ax-rpa.html">AX / RPA</a>
+                        <a href="../../consulting/ad-monetization.html">Ad Monetization</a>
+                    </div>
+                </li>
+                <li class="nav-group">
+                    <a href="../../index.html#service">에이전시 <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg></a>
+                    <div class="nav-dropdown">
+                        <a href="../../agency/search-display-ads.html">SA/DA 광고</a>
+                        <a href="../../agency/sms-lms-mms-rcs.html">SKT 문자광고</a>
+                    </div>
+                </li>
+                <li class="nav-group">
+                    <a href="../../index.html#projects">프로젝트 <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg></a>
+                    <div class="nav-dropdown">
+                        <a href="../../project/ggeujag.html">그작그작</a>
+                        <a href="../../project/blifeing.html">Blifeing</a>
+                    </div>
+                </li>
+                <li><a href="../../story.html">스토리</a></li>
+                <li><a href="../../contact.html" class="btn-nav">문의하기</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기" aria-expanded="false"
+                aria-controls="nav-overlay">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <div class="nav-overlay" id="nav-overlay" role="dialog" aria-label="모바일 메뉴">
+        <button class="nav-acc-btn" aria-expanded="false">
+            컨설팅 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </button>
+        <div class="nav-acc-items">
+            <a href="../../index.html#consulting">컨설팅 홈</a>
+            <a href="../../consulting/seo-aeo-geo.html">SEO / AEO / GEO</a>
+            <a href="../../consulting/ax-rpa.html">AX / RPA</a>
+            <a href="../../consulting/ad-monetization.html">Ad Monetization</a>
+        </div>
+
+        <button class="nav-acc-btn" aria-expanded="false">
+            에이전시 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </button>
+        <div class="nav-acc-items">
+            <a href="../../index.html#service">에이전시 홈</a>
+            <a href="../../agency/search-display-ads.html">SA/DA 광고</a>
+            <a href="../../agency/sms-lms-mms-rcs.html">SKT 문자광고</a>
+        </div>
+
+        <button class="nav-acc-btn" aria-expanded="false">
+            프로젝트 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </button>
+        <div class="nav-acc-items">
+            <a href="../../index.html#projects">프로젝트 홈</a>
+            <a href="../../project/ggeujag.html">그작그작</a>
+            <a href="../../project/blifeing.html">Blifeing</a>
+        </div>
+
+        <a href="../../story.html" style="margin-top:0.5rem">스토리</a>
+        <a href="../../contact.html" class="btn-nav-mobile" style="margin-top:1rem">문의하기</a>
+    </div>
+
+    <main style="padding-top: 5rem; min-height: 100vh;">
+
+        <!-- 포스트 Hero -->
+        <div style="padding: 4rem 0 3rem; position: relative; overflow: hidden;">
+            <div
+                style="position:absolute;inset:0;background:radial-gradient(ellipse at top left, rgba(37,99,235,0.1) 0%, transparent 60%);pointer-events:none;">
+            </div>
+            <div class="container-narrow">
+                <nav class="breadcrumb" aria-label="브레드크럼" style="margin-bottom: 1.5rem;">
+                    <a href="../../">홈</a>
+                    <span class="breadcrumb-sep" aria-hidden="true">›</span>
+                    <a href="../../story.html">스토리</a>
+                    <span class="breadcrumb-sep" aria-hidden="true">›</span>
+                    <span aria-current="page">Ad Monetization</span>
+                </nav>
+                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.25rem;">
+                    <span class="tag">구글 GNI</span>
+                    <span class="tag">광고 수익화</span>
+                    <span class="tag">정책 가이드</span>
+                </div>
+                <h1
+                    style="font-size: clamp(1.75rem, 4.5vw, 2.8rem); font-weight: 900; letter-spacing: -0.04em; line-height: 1.15; margin-bottom: 1.25rem;">
+                    구글코리아 GNI 워크숍:<br><span class="accent-silver">광고 수익화 A to Z</span>
+                </h1>
+                <p
+                    style="color: var(--clr-text-muted); font-size: 1.05rem; line-height: 1.75; max-width: 580px; margin-bottom: 2rem;">
+                    2023년 10월 26일, 구글코리아 GNI 워크숍에서 다뤄진 퍼블리셔(언론사/매체사)를 위한 트래픽 증대 및 광고 수익화, 그리고 핵심 정책 준수 가이드를 요약합니다.
+                </p>
+                <div
+                    style="display: flex; align-items: center; gap: 1rem; font-size: 0.82rem; color: var(--clr-text-dim);">
+                    <span>Silversmith</span>
+                    <span>·</span>
+                    <time datetime="2023-10-26">2023년 10월 26일</time>
+                    <span>·</span>
+                    <span>읽는 시간 10분</span>
+                </div>
+            </div>
+        </div>
+
+        <hr class="post-divider" style="max-width: 720px; margin: 0 auto 2.5rem;" />
+
+        <!-- 본문 -->
+        <article class="post-body container-narrow" style="padding-bottom: 5rem;">
+
+            <h2>1. 트래픽 및 광고 수익 증대 고려사항 (수익화 준비)</h2>
+
+            <h3>트래픽 증대 전략</h3>
+            <p>국내 포털의 인링크/아웃링크 정책 변화에 맞춰 매체사는 자체 트래픽(Direct/Organic)을 늘리기 위한 근본적인 고민이 필요합니다. 이를 위해 검색엔진뿐만 아니라 <strong>구글
+                    디스커버(Google Discover)</strong> 등 다양한 트래픽 유입 소스를 확보해야 합니다.</p>
+            <p>특히 자체 웹사이트 방문자의 사용자 경험(UX)을 극대화시켜 이탈을 방지하려면, 페이지 로딩 성능 및 레이아웃 안정성을 측정하는 <strong>코어 웹 바이탈(Core Web Vitals:
+                    LCP, FID, CLS)</strong>의 지속적인 관리가 필수적입니다.</p>
+
+            <h3>수익 증대 전략</h3>
+            <p>트래픽이 확보되었다면, 광고 수익을 극대화하기 위해 다음 3가지 핵심 지표를 관리해야 합니다.</p>
+            <ul>
+                <li><strong>CPM (1천 회 노출당 단가)</strong>: 노출 대비 얼마나 높은 단가를 달성하는가</li>
+                <li><strong>Ad Fill Rate (광고 게재율)</strong>: 요청한 광고 슬롯에 실제 광고가 얼마나 꽉 채워져 송출되는가</li>
+                <li><strong>Viewability (조회가능성)</strong>: 로드된 광고가 사용자 화면에 실제로 보이는가</li>
+            </ul>
+            <p>최근에는 단순한 일반 배너 광고에만 의존하기보다는, <strong>전면 광고, 리워드 광고, 동영상 광고, 앵커(하단 고정) 광고</strong> 등 상대적으로 CPM 단가가 매우 높은
+                구글의 프리미엄 광고 상품들을 적극적으로 도입하는 매체들이 가장 높은 수익 성장을 보이고 있습니다.</p>
+
+            <h2>2. 구글 광고 수익화 제품 기초 활용</h2>
+            <p>언론사를 비롯한 웹사이트 운영자들은 구글이 제공하는 두 가지 핵심 광고 플랫폼을 사용합니다.</p>
+
+            <h3>Google AdSense (구글 애드센스)</h3>
+            <p>주로 중소형 매체사를 대상으로 하며, <strong>구글 네트워크 광고만 단독으로 제공</strong>하여 시스템이 복잡하지 않은 것이 특징입니다.</p>
+            <ul>
+                <li>클릭 몇 번만으로 자동 광고(Auto Ads)를 켤 수 있어 설정과 관리가 매우 쉽습니다.</li>
+                <li>오로지 구글이 보유한 수요(Demand) 내에서만 최적화가 진행됩니다.</li>
+            </ul>
+
+            <h3>Google Ad Manager (구글 애드매니저)</h3>
+            <p>대형 매체사(또는 MCM 파트너를 통한 중소형 매체사)를 위해 설계된 강력한 통합 광고 서버 솔루션입니다.</p>
+            <ul>
+                <li>구글 네트워크뿐만 아니라 매체사가 <strong>직접 계약한 광고주(Direct Deal)</strong> 광고나 <strong>타사 애드 네트워크</strong>들을 모두 연결해
+                    가장 단가가 높은 광고를 골라 송출할 수 있습니다(헤더비딩, Open Bidding 등).</li>
+                <li>상세한 단위 통제와 세밀한 수동 컨트롤이 가능해 전담 운영팀이 있을 경우 수익 극대화에 유리합니다.</li>
+            </ul>
+
+            <div class="callout">
+                <strong>💡 수익 지표의 분석</strong><br>
+                네트워크 광고 수익은 기본적으로 <code>노출수 × 클릭률(CTR) × 클릭당 단가(CPC)</code>의 곱으로 발생합니다. 복잡한 개별 수치를 쫓기보다 이를 종합 환산한
+                <strong>CPM (1천 노출당 수익)</strong>을 핵심 기준 지표(North Star metric)로 설정하고 트렌드를 분석하는 것이 올바른 방법입니다.
+            </div>
+
+            <h2>3. 구글 게시자 정책 및 위반 방지</h2>
+            <p>구글은 광고주 보호와 건강한 웹 생태계 유지를 위해 매우 엄격한 <strong>게시자 정책(Publisher Policies)</strong>을 운영합니다. 정책 위반 시 즉각 게재
+                제한(Ad serving limit) 혹은 계정 정지 처분을 받을 수 있습니다.</p>
+
+            <h3>의도하지 않은 클릭(Accidental Click)과 Confirmed Click</h3>
+            <p>가장 흔하고 뼈아픈 위반 사례 중 하나입니다. 사이트의 주요 메뉴나 탐색 버튼에 광고를 너무 가깝게 붙이거나, 페이지 스크롤 속도보다 광고 로딩이 느려(CLS 불량) 사용자가 실수로 광고를
+                누르게 만드는 행위입니다.</p>
+            <p>이 행위가 누적되면 구글 시스템은 해당 사이트에 <strong>'Confirmed Click (확인 클릭)'</strong> 페널티를 부여합니다. 즉, 사용자가 광고를 탭하면 바로 이동하지
+                않고 "사이트를 방문하시겠습니까?"라는 팝업을 한 번 더 띄우게 됩니다. 이 페널티에 걸리는 순간 사이트의 CTR은 바닥을 치고 RPM(수익률)이 심각하게 급락합니다.</p>
+
+            <h3>무효 트래픽(Invalid Traffic - IVT) 주의</h3>
+            <p>친구, 지인, 내부 직원이 반복적으로 자사 광고를 클릭하거나 자동화된 봇(Bot) 트래픽이 유입되어 발생한 클릭을 뜻합니다. 구글은 이를 악의적 혹은 비정상적 트래픽으로 간주하여 익월 정산
+                시 발생한 <strong>광고 수익의 98% 이상을 무효 처리 및 차감</strong>할 수 있으므로 구글 애널리틱스 등을 통한 철저한 트래픽 성질 관리가 필요합니다.</p>
+
+            <h3>서드파티 쿠키(3rd-party Cookies) 중단 대비</h3>
+            <p>보안 정책 강화로 향후 사파리와 크롬 환경 등에서 서드파티 쿠키 지원이 중단될 예정입니다. 이렇게 되면 사용자의 방문 기록을 추적하는 리타겟팅(맞춤형 광고) 정밀도가 떨어져, 전반적인 광고
+                단가와 매체의 수익 감소로 이어질 수 있습니다.</p>
+            <p>매체사는 이메일 구독, 회원가입 유도 등을 통해 자사 보유 데이터(1st-party Data)를 선제적으로 확보하는 전략적 대비를 시작해야 합니다.</p>
+
+            <hr class="post-divider" />
+
+            <!-- CTA -->
+            <div
+                style="text-align: center; padding: 2rem; background: var(--clr-bg-card); border: 1px solid var(--clr-border); border-radius: var(--radius-lg);">
+                <p class="section-eyebrow" style="margin-bottom: 0.75rem;">Silversmith Ad Monetization</p>
+                <h2 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.75rem;">광고 수익을 한 차원 높이고 싶으십니까?</h2>
+                <p style="color: var(--clr-text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">트래픽 분석, 광고 포맷 최적화,
+                    애드매니저 세팅 및 정책 관리까지.<br />애드테크 전문가 그룹과 함께 매체의 수익성을 극대화하세요.</p>
+                <a href="../../contact.html" class="btn btn-primary" id="cta-ad-monetization">수익화 컨설팅 살펴보기 →</a>
+            </div>
+
+        </article>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2026 실버스미스 주식회사 · <a href="mailto:help@silver-smiths.com"
+                        style="color:inherit">help@silver-smiths.com</a></p>
+                <div class="footer-links">
+                    <a href="../../story.html">스토리</a>
+                    <a href="../../contact.html">문의</a>
+                    <a href="../../">홈</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js" defer></script>
+</body>
+
+</html>

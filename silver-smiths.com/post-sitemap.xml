@@ -1,29 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+        http://www.google.com/schemas/sitemap-news/0.9
+        http://www.google.com/schemas/sitemap-news/0.9/sitemap-news.xsd">
 
   <!-- 포스팅 -->
   <url>
-    <loc>https://silver-smiths.com/post/202207/tech-seo-korea.html</loc>
+    <loc>https://silver-smiths.com/post/2025/ggeujag-activity.html</loc>
     <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Silversmith</news:name>
+        <news:language>ko</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-27</news:publication_date>
+      <news:title>그작그작 활동 기록 — 2025년 12월 신규 프로젝트</news:title>
+    </news:news>
   </url>
 
   <url>
-    <loc>https://silver-smiths.com/post/202210/core-web-vitals.html</loc>
+    <loc>https://silver-smiths.com/post/2025/ai-ray-android-tv.html</loc>
     <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Silversmith</news:name>
+        <news:language>ko</news:language>
+      </news:publication>
+      <news:publication_date>2025-11-20</news:publication_date>
+      <news:title>2025 구글 안드로이드 TV 서밋: Gemini로 진화한 AI Ray 브랜드 세이프티</news:title>
+    </news:news>
   </url>
 
   <url>
-    <loc>https://silver-smiths.com/post/202502/ggeujag-activity.html</loc>
-    <lastmod>2026-02-28</lastmod>
+    <loc>https://silver-smiths.com/post/2025/ai-ray-brand-safety.html</loc>
+    <lastmod>2026-03-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Silversmith</news:name>
+        <news:language>ko</news:language>
+      </news:publication>
+      <news:publication_date>2025-09-30</news:publication_date>
+      <news:title>2025 구글코리아 미디어 파트너스 데이: AI가 지키는 브랜드 세이프티</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://silver-smiths.com/post/2025/gni-ad-monetization-2025.html</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Silversmith</news:name>
+        <news:language>ko</news:language>
+      </news:publication>
+      <news:publication_date>2025-08-25</news:publication_date>
+      <news:title>2025 구글코리아 GNI 워크숍: 프로그래매틱 광고 생존 전략</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://silver-smiths.com/post/2024/gni-ad-monetization-2024.html</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Silversmith</news:name>
+        <news:language>ko</news:language>
+      </news:publication>
+      <news:publication_date>2024-08-27</news:publication_date>
+      <news:title>2024 구글코리아 GNI 워크숍: 광고 수익화 및 UX 개선 최신 가이드</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://silver-smiths.com/post/2023/gni-ad-monetization.html</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Silversmith</news:name>
+        <news:language>ko</news:language>
+      </news:publication>
+      <news:publication_date>2023-10-26</news:publication_date>
+      <news:title>구글코리아 GNI 워크숍: 퍼블리셔 광고 수익화 A to Z</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://silver-smiths.com/post/2022/core-web-vitals.html</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Silversmith</news:name>
+        <news:language>ko</news:language>
+      </news:publication>
+      <news:publication_date>2022-10-20</news:publication_date>
+      <news:title>Core Web Vitals 완벽 가이드</news:title>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://silver-smiths.com/post/2022/tech-seo-korea.html</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Silversmith</news:name>
+        <news:language>ko</news:language>
+      </news:publication>
+      <news:publication_date>2022-07-28</news:publication_date>
+      <news:title>한국에서 Tech SEO가 꼭 필요한 이유</news:title>
+    </news:news>
   </url>
 
 </urlset>

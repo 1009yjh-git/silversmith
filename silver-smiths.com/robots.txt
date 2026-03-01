@@ -2,6 +2,8 @@ User-agent: *
 Allow: /
 Disallow: /private/
 Sitemap: https://silver-smiths.com/sitemap.xml
+Sitemap: https://silver-smiths.com/page-sitemap.xml
+Sitemap: https://silver-smiths.com/post-sitemap.xml
 
 # 이미지 크롤러 허용
 User-agent: Googlebot-Image

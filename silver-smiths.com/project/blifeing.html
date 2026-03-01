@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ko" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description"
+        content="Blifeing (비라이핑) — AI가 자동으로 써주는 일기 앱. 건강·위치·사진·캘린더 데이터를 자동 수집해 Google Gemini AI가 나만의 일기를 완성합니다. iOS & Android 지원." />
+    <meta name="keywords" content="Blifeing, 비라이핑, AI 일기, 자동 일기, Gemini AI, 일기 앱, iOS, Android, Silversmith" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="author" content="Silversmith" />
+    <link rel="canonical" href="https://silversmith.kr/project/blifeing.html" />
+    <link rel="alternate" hreflang="ko" href="https://silversmith.kr/project/blifeing.html" />
+    <link rel="alternate" hreflang="x-default" href="https://silversmith.kr/project/blifeing.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://silversmith.kr/project/blifeing.html" />
+    <meta property="og:title" content="Blifeing — AI가 써주는 나만의 일기 앱" />
+    <meta property="og:description" content="건강·위치·사진 데이터로 Gemini AI가 자동으로 일기를 완성합니다. iOS & Android 지원." />
+    <meta property="og:image" content="https://silversmith.kr/images/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="Silversmith" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Blifeing — AI가 써주는 나만의 일기 앱" />
+    <meta name="twitter:description" content="Gemini AI가 하루를 기록합니다. iOS & Android." />
+    <meta name="twitter:image" content="https://silversmith.kr/images/og-image.png" />
+
+    <title>Blifeing — AI가 써주는 나만의 일기 앱 | Silversmith</title>
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MobileApplication",
+        "@id": "https://silversmith.kr/project/blifeing.html#app",
+        "name": "Blifeing",
+        "alternateName": "비라이핑",
+        "description": "AI가 자동으로 생성해주는 일기 앱. 건강·위치·사진·캘린더 등 하루 데이터를 자동 수집해 Google Gemini AI가 나만의 일기를 완성합니다.",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": ["iOS", "Android"],
+        "author": { "@id": "https://silversmith.kr/#org" },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "무료 플랜",
+            "price": "0",
+            "priceCurrency": "KRW"
+          },
+          {
+            "@type": "Offer",
+            "name": "프리미엄 플랜",
+            "price": "4900",
+            "priceCurrency": "KRW",
+            "billingIncrement": "month"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://silversmith.kr/" },
+          { "@type": "ListItem", "position": 2, "name": "프로젝트", "item": "https://silversmith.kr/#projects" },
+          { "@type": "ListItem", "position": 3, "name": "Blifeing", "item": "https://silversmith.kr/project/blifeing.html" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Blifeing은 어떻게 일기를 자동으로 써주나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Blifeing은 사용자의 동의하에 건강 데이터(걸음수·수면), 위치, 사진, 캘린더 일정을 자동 수집합니다. 수집된 데이터를 Google Gemini AI가 분석해 사용자의 하루를 담은 일기를 자동으로 생성합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Blifeing은 무료로 사용할 수 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "기본 기능은 무료로 제공됩니다. 월 4,900원의 프리미엄 플랜을 구독하면 무제한 일기 생성, AI 타로카드 기능, 고급 일기 스타일 등 더 많은 기능을 이용할 수 있습니다."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+    <!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-MQT4J6J');
+</script>
+<!-- End Google Tag Manager -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Inter:wght@400;500;700;900&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Inter:wght@400;500;700;900&display=swap" />
+    </noscript>
+
+    <link rel="preload" href="../css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="preload" href="../css/pages.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/pages.css" />
+    </noscript>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            background: #080d1a;
+            color: #d4daf0;
+            font-family: 'Noto Sans KR', 'Inter', sans-serif;
+            overflow-x: hidden
+        }
+
+        #main-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 500;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem clamp(1.25rem, 4vw, 2.5rem);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background: rgba(8, 13, 26, .88);
+            border-bottom: 1px solid rgba(148, 163, 210, .12)
+        }
+
+        .nav-logo {
+            font-size: 1.4rem;
+            font-weight: 800;
+            letter-spacing: -.04em;
+            background: linear-gradient(135deg, #c8cdd6, #e8ecf4, #a8b0c0, #d0d8e8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text
+        }
+    </style>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQT4J6J" height="0" width="0"
+    style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+    <header>
+        <nav id="main-nav" aria-label="주 내비게이션">
+            <a href="../index.html" class="nav-logo" aria-label="Silversmith 홈">Silver<span>smith</span></a>
+            <ul class="nav-links" role="list">
+                <li class="nav-group">
+                    <a href="../index.html#consulting">컨설팅 <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg></a>
+                    <div class="nav-dropdown">
+                        <a href="../consulting/seo-aeo-geo.html">SEO / AEO / GEO</a>
+                        <a href="../consulting/ax-rpa.html">AX / RPA</a>
+                        <a href="../consulting/ad-monetization.html">Ad Monetization</a>
+                    </div>
+                </li>
+                <li class="nav-group">
+                    <a href="../index.html#service">에이전시 <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg></a>
+                    <div class="nav-dropdown">
+                        <a href="../agency/search-display-ads.html">SA/DA 광고</a>
+                        <a href="../agency/sms-lms-mms-rcs.html">SKT 문자광고</a>
+                    </div>
+                </li>
+                <li class="nav-group">
+                    <a href="../index.html#projects" class="active">프로젝트 <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg></a>
+                    <div class="nav-dropdown">
+                        <a href="../project/ggeujag.html">그작그작</a>
+                        <a href="../project/blifeing.html">Blifeing</a>
+                    </div>
+                </li>
+                <li><a href="../story.html">스토리</a></li>
+                <li><a href="../contact.html" class="btn-nav">문의하기</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기" aria-expanded="false"
+                aria-controls="nav-overlay">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    
+    <div class="nav-overlay" id="nav-overlay" role="dialog" aria-label="모바일 메뉴">
+        <div class="nav-mobile-group">
+            <a href="../index.html#consulting" class="nav-mobile-title">컨설팅</a>
+            <a href="../consulting/seo-aeo-geo.html" class="nav-mobile-sub">- SEO / AEO / GEO</a>
+            <a href="../consulting/ax-rpa.html" class="nav-mobile-sub">- AX / RPA</a>
+            <a href="../consulting/ad-monetization.html" class="nav-mobile-sub">- Ad Monetization</a>
+        </div>
+        <div class="nav-mobile-group">
+            <a href="../index.html#service" class="nav-mobile-title">에이전시</a>
+            <a href="../agency/search-display-ads.html" class="nav-mobile-sub">- SA/DA 광고</a>
+            <a href="../agency/sms-lms-mms-rcs.html" class="nav-mobile-sub">- SKT 문자광고</a>
+        </div>
+        <div class="nav-mobile-group">
+            <a href="../index.html#projects" class="nav-mobile-title">프로젝트</a>
+            <a href="../project/ggeujag.html" class="nav-mobile-sub">- 그작그작</a>
+            <a href="../project/blifeing.html" class="nav-mobile-sub">- Blifeing</a>
+        </div>
+        <a href="../story.html" style="margin-top:0.5rem">회사 스토리</a>
+        <a href="../contact.html" class="btn-nav-mobile" style="margin-top:1rem">문의하기</a>
+    </div>
+    <main>
+
+        <!-- PAGE HERO -->
+        <section class="page-hero blifeing-hero" aria-label="페이지 헤더">
+            <div class="blob"
+                style="width:600px;height:500px;top:-20%;left:-20%;opacity:0.12;background:linear-gradient(135deg,#7c3aed,#5b21b6);border-radius:50%;filter:blur(100px);position:absolute">
+            </div>
+            <div class="blob"
+                style="width:400px;height:400px;top:10%;right:-15%;opacity:0.08;background:#f5c842;border-radius:50%;filter:blur(80px);position:absolute">
+            </div>
+            <div class="container">
+                <nav class="breadcrumb" aria-label="브레드크럼">
+                    <a href="../">홈</a>
+                    <span class="breadcrumb-sep" aria-hidden="true">›</span>
+                    <a href="../index.html#projects">프로젝트</a>
+                    <span class="breadcrumb-sep" aria-hidden="true">›</span>
+                    <span>Blifeing</span>
+                </nav>
+                <div class="page-hero-eyebrow">
+                    <span class="tag"
+                        style="background:rgba(124,58,237,.15);border-color:rgba(124,58,237,.3);color:#a78bfa">Project</span>
+                    <span class="tag"
+                        style="background:rgba(124,58,237,.15);border-color:rgba(124,58,237,.3);color:#a78bfa;margin-left:0.5rem">AI
+                        · iOS · Android</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:1rem;margin-bottom:0.5rem">
+                    <div style="font-size:3.5rem" aria-hidden="true">📓</div>
+                    <h1 class="reveal"
+                        style="font-size:clamp(2.5rem,6vw,4rem);background:linear-gradient(135deg,#8b5cf6,#c4b5fd,#f5c842);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
+                        Blifeing</h1>
+                </div>
+                <p class="reveal" style="font-size:1rem;color:#a78bfa;font-weight:600;margin-bottom:0.5rem">비라이핑 — AI가
+                    자동으로 써주는 나만의 일기</p>
+                <p class="reveal reveal-delay-1">건강·위치·사진·캘린더 데이터를 자동 수집해 Google Gemini AI가 나만의 일기를 완성합니다. 이제 일기 쓰는 고민은
+                    AI에게 맡기세요.</p>
+                <div class="hero-cta reveal reveal-delay-2"
+                    style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap">
+                    <a href="#download" class="btn"
+                        style="background:linear-gradient(135deg,#7c3aed,#8b5cf6);color:#fff;font-weight:800"
+                        id="hero-btn-download">앱 다운로드</a>
+                    <a href="#features" class="btn btn-outline" id="hero-btn-features">기능 살펴보기</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOW IT WORKS -->
+        <section class="section" aria-label="작동 방식" id="features">
+            <div class="container">
+                <div class="section-header reveal">
+                    <p class="section-eyebrow">How It Works</p>
+                    <h2 class="section-title">하루가 끝나면<br><span
+                            style="background:linear-gradient(135deg,#8b5cf6,#f5c842);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">일기가
+                            완성</span>됩니다</h2>
+                    <p class="section-desc">복잡한 설정 없이도 Blifeing이 하루를 기록합니다.</p>
+                </div>
+                <div class="how-grid">
+                    <div class="how-card reveal" id="how-1">
+                        <div class="how-step">01</div>
+                        <div class="how-icon">📱</div>
+                        <h3>데이터 자동 수집</h3>
+                        <p>걸음수·수면·심박수, 방문한 장소, 촬영한 사진, 캘린더 일정을 백그라운드에서 자동 수집합니다.</p>
+                    </div>
+                    <div class="how-card reveal reveal-delay-1" id="how-2">
+                        <div class="how-step">02</div>
+                        <div class="how-icon">🤖</div>
+                        <h3>Gemini AI 분석</h3>
+                        <p>수집된 데이터를 Google Gemini AI가 종합 분석해 오늘 하루의 맥락을 파악합니다.</p>
+                    </div>
+                    <div class="how-card reveal reveal-delay-2" id="how-3">
+                        <div class="how-step">03</div>
+                        <div class="how-icon">✨</div>
+                        <h3>일기 자동 생성</h3>
+                        <p>나만의 글쓰기 스타일로 감성 있는 일기가 자동 완성됩니다. 수정도 자유롭게 가능.</p>
+                    </div>
+                    <div class="how-card reveal reveal-delay-3" id="how-4">
+                        <div class="how-step">04</div>
+                        <div class="how-icon">🃏</div>
+                        <h3>AI 타로카드</h3>
+                        <p>일기를 바탕으로 AI가 오늘의 타로카드를 해석해 나만의 인사이트를 제공합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES DETAIL -->
+        <section class="section section-bg-alt" aria-label="주요 기능 상세">
+            <div class="container">
+                <div class="section-header reveal">
+                    <p class="section-eyebrow">Features</p>
+                    <h2 class="section-title">Blifeing의 <span
+                            style="background:linear-gradient(135deg,#8b5cf6,#f5c842);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">모든
+                            기능</span></h2>
+                </div>
+                <div class="bf-features-grid">
+                    <div class="bf-feat reveal" id="bf-feat-1">
+                        <div class="bf-feat-icon" style="background:rgba(124,58,237,.15)">🏥</div>
+                        <div>
+                            <h3>건강 데이터 연동</h3>
+                            <p>Apple Health·Google Fit과 연동해 걸음수, 수면, 심박수가 일기에 반영됩니다.</p>
+                        </div>
+                    </div>
+                    <div class="bf-feat reveal reveal-delay-1" id="bf-feat-2">
+                        <div class="bf-feat-icon" style="background:rgba(245,200,66,.1)">📍</div>
+                        <div>
+                            <h3>장소 자동 기록</h3>
+                            <p>하루 동안 방문한 장소가 자동으로 기록되어 일기에 풍성한 맥락이 더해집니다.</p>
+                        </div>
+                    </div>
+                    <div class="bf-feat reveal reveal-delay-2" id="bf-feat-3">
+                        <div class="bf-feat-icon" style="background:rgba(124,58,237,.15)">📸</div>
+                        <div>
+                            <h3>사진 분석</h3>
+                            <p>오늘 찍은 사진을 AI가 분석해 기억에 남는 순간을 일기에 담습니다.</p>
+                        </div>
+                    </div>
+                    <div class="bf-feat reveal reveal-delay-3" id="bf-feat-4">
+                        <div class="bf-feat-icon" style="background:rgba(245,200,66,.1)">📅</div>
+                        <div>
+                            <h3>캘린더 연동</h3>
+                            <p>중요한 일정과 미팅이 일기에 자연스럽게 반영됩니다.</p>
+                        </div>
+                    </div>
+                    <div class="bf-feat reveal" id="bf-feat-5">
+                        <div class="bf-feat-icon" style="background:rgba(124,58,237,.15)">🎨</div>
+                        <div>
+                            <h3>글쓰기 스타일 선택</h3>
+                            <p>감성적, 유머러스, 담백한 등 다양한 일기 스타일 중 원하는 것을 선택합니다.</p>
+                        </div>
+                    </div>
+                    <div class="bf-feat reveal reveal-delay-1" id="bf-feat-6">
+                        <div class="bf-feat-icon" style="background:rgba(245,200,66,.1)">🔒</div>
+                        <div>
+                            <h3>완벽한 프라이버시</h3>
+                            <p>모든 데이터는 암호화 저장되며, 제3자와 공유되지 않습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING -->
+        <section class="section" aria-label="요금제" id="pricing">
+            <div class="container">
+                <div class="section-header reveal">
+                    <p class="section-eyebrow">Pricing</p>
+                    <h2 class="section-title">합리적인 <span
+                            style="background:linear-gradient(135deg,#8b5cf6,#f5c842);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">요금제</span>
+                    </h2>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card reveal" id="plan-free">
+                        <div class="plan-badge">Free</div>
+                        <div class="plan-price">₩0<span>/월</span></div>
+                        <p class="plan-desc">Blifeing을 처음 경험해보세요</p>
+                        <ul class="plan-features">
+                            <li>✓ 월 10회 일기 자동 생성</li>
+                            <li>✓ 기본 건강 데이터 연동</li>
+                            <li>✓ 기본 글쓰기 스타일 2가지</li>
+                            <li>✓ 일기 편집 및 저장</li>
+                            <li style="color:var(--clr-text-dim)">– AI 타로카드</li>
+                            <li style="color:var(--clr-text-dim)">– 무제한 일기 복습</li>
+                        </ul>
+                        <a href="#download" class="btn btn-outline" id="btn-free-plan">무료로 시작</a>
+                    </div>
+                    <div class="pricing-card pricing-card-premium reveal reveal-delay-1" id="plan-premium">
+                        <div class="plan-badge plan-badge-premium">Premium</div>
+                        <div class="plan-price">₩4,900<span>/월</span></div>
+                        <p class="plan-desc">Blifeing의 모든 기능을 무제한으로</p>
+                        <ul class="plan-features">
+                            <li>✓ <strong>무제한</strong> 일기 자동 생성</li>
+                            <li>✓ 전체 건강 데이터 연동</li>
+                            <li>✓ 모든 글쓰기 스타일 (10가지+)</li>
+                            <li>✓ AI 타로카드 해석</li>
+                            <li>✓ 무제한 일기 복습 & 검색</li>
+                            <li>✓ 우선 고객 지원</li>
+                        </ul>
+                        <a href="#download" class="btn"
+                            style="background:linear-gradient(135deg,#7c3aed,#8b5cf6);color:#fff;font-weight:800;width:100%;justify-content:center"
+                            id="btn-premium-plan">프리미엄 시작</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOWNLOAD -->
+        <section class="section section-bg-alt" aria-label="앱 다운로드" id="download">
+            <div class="container">
+                <div class="download-cta reveal">
+                    <div>
+                        <p class="section-eyebrow">Download</p>
+                        <h2 class="section-title" style="margin-bottom:1rem">지금 바로 시작하세요</h2>
+                        <p class="section-desc" style="margin-bottom:2rem">iOS App Store와 Google Play Store에서 Blifeing을
+                            다운로드하세요.</p>
+                        <div style="display:flex;gap:1rem;flex-wrap:wrap">
+                            <a href="#" class="store-btn" id="btn-appstore" aria-label="App Store에서 다운로드">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                                </svg>
+                                <span>
+                                    <small>다운로드</small>
+                                    App Store
+                                </span>
+                            </a>
+                            <a href="#" class="store-btn" id="btn-playstore" aria-label="Google Play에서 다운로드">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M3.18 23.76c.35.19.75.24 1.15.14l.07-.04L13 15.3l-2.89-2.89zM21.37 10.3L19.2 9.07l-3.23 3.23 3.24 3.24 2.16-1.2c.62-.36.99-1.01.99-1.72s-.38-1.35-1-1.71zM3.08.7c-.08.27-.08.58 0 .9v21.8c0 .32.09.63.27.88l.08.08L13 15.3l.01-.01L3.08.7zM13.72 13l2.84 2.84-9.24 5.28L13.72 13z" />
+                                </svg>
+                                <span>
+                                    <small>다운로드</small>
+                                    Google Play
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="phone-preview" aria-hidden="true">
+                        <div class="pp-screen">
+                            <div class="pp-header">
+                                <div class="pp-date">2026년 2월 27일 목요일</div>
+                                <div class="pp-gem">✨ Gemini AI</div>
+                            </div>
+                            <div class="pp-diary">
+                                <p>오늘은 총 8,432걸음을 걸었다. 오후에 강남 카페에서 오랜 친구를 만나 두 시간 넘게 이야기를 나눴는데, 창밖으로 보이는 빗속 거리가 유독 아름다워
+                                    사진을 찍었다...</p>
+                                <div class="pp-photo">📸 오늘의 사진 3장</div>
+                            </div>
+                            <div class="pp-tarot">
+                                <div class="pp-tarot-title">🃏 오늘의 타로</div>
+                                <div class="pp-tarot-card">The Star · 희망</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section" aria-label="자주 묻는 질문">
+            <div class="container container-narrow">
+                <div class="section-header reveal">
+                    <p class="section-eyebrow">FAQ</p>
+                    <h2 class="section-title">자주 묻는 <span
+                            style="background:linear-gradient(135deg,#8b5cf6,#f5c842);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">질문</span>
+                    </h2>
+                </div>
+                <div class="faq-list" id="faq-blifeing">
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">
+                            Blifeing은 어떻게 일기를 자동으로 써주나요?
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-a" role="region">
+                            <p>Blifeing은 사용자의 동의하에 건강 데이터(걸음수·수면), 위치, 사진, 캘린더 일정을 자동 수집합니다. 수집된 데이터를 Google Gemini AI가
+                                분석해 사용자의 하루를 담은 일기를 자동으로 생성합니다.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">
+                            내 개인 데이터는 안전한가요?
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-a" role="region">
+                            <p>모든 데이터는 암호화되어 저장되며 제3자와 공유되지 않습니다. 건강 데이터·위치 등 민감한 정보는 일기 생성 후 서버에 보관되지 않으며, 언제든 앱 내에서
+                                데이터 삭제를 요청할 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">
+                            Blifeing은 무료로 사용할 수 있나요?
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-a" role="region">
+                            <p>기본 기능은 무료로 제공됩니다(월 10회 일기 생성). 월 4,900원의 프리미엄 플랜을 구독하면 무제한 일기 생성, AI 타로카드, 고급 스타일 등 모든
+                                기능을 이용할 수 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q" aria-expanded="false">
+                            AI가 쓴 일기를 수정할 수 있나요?
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-a" role="region">
+                            <p>물론입니다. 자동 생성된 일기는 완전히 편집 가능합니다. AI의 초안을 기반으로 원하는 내용을 추가하거나 수정해 나만의 일기로 완성할 수 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section" id="contact" aria-label="문의"
+            style="background:linear-gradient(135deg,#08041a 0%,#0e0828 50%,#08041a 100%)">
+            <div class="container">
+                <p class="section-eyebrow" style="text-align:center;margin-bottom:1rem;color:#a78bfa">Blifeing</p>
+                <h2 class="reveal">오늘 하루를<br><span
+                        style="background:linear-gradient(135deg,#8b5cf6,#f5c842);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">기록</span>해
+                    보세요</h2>
+                <p class="reveal reveal-delay-1">지금 바로 무료로 시작하고 AI가 써주는 일기를 경험하세요.</p>
+                <div class="cta-btns reveal reveal-delay-2">
+                    <a href="#download" class="btn"
+                        style="background:linear-gradient(135deg,#7c3aed,#8b5cf6);color:#fff;font-weight:800"
+                        id="cta-download-blifeing">앱 다운로드</a>
+                    <a href="../" class="btn btn-outline" id="cta-home-blifeing">← 홈으로 돌아가기</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="../index.html" class="footer-logo" aria-label="Silversmith 홈">Silversmith</a>
+                    <p class="footer-tagline">전략 · 기술 · 제품으로 디지털 성장을 가속합니다</p>
+                </div>
+                <nav class="footer-nav" aria-label="푸터 내비게이션">
+                    <div class="footer-col">
+                        <h3>컨설팅</h3>
+                        <ul role="list">
+                            <li><a href="../consulting/seo-aeo-geo.html">SEO / AEO / GEO</a></li>
+                            <li><a href="../consulting/ax-rpa.html">AX / RPA</a></li>
+                            <li><a href="../consulting/ad-monetization.html">Ad Monetization</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>서비스 & 프로젝트</h3>
+                        <ul role="list">
+                            <li><a href="../agency/search-display-ads.html">SA/DA 광고</a></li>
+                            <li><a href="../agency/sms-lms-mms-rcs.html">SKT 문자광고</a></li>
+                            <li><a href="../project/ggeujag.html">그작그작</a></li>
+                            <li><a href="../project/blifeing.html">Blifeing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>회사</h3>
+                        <ul role="list">
+                            <li><a href="../story.html">회사 스토리</a></li>
+                            <li><a href="../contact.html">문의하기</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2026 실버스미스 주식회사 · <a href="mailto:help@silver-smiths.com"
+                        style="color:inherit">help@silver-smiths.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+</body>
+
+</html>

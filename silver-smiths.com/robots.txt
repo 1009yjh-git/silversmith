@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+Sitemap: https://silver-smiths.com/sitemap.xml
+
+# 이미지 크롤러 허용
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Crawl-delay for politeness
+Crawl-delay: 1

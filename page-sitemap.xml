@@ -85,4 +85,18 @@
     <priority>0.5</priority>
   </url>
 
+  <url>
+    <loc>https://silver-smiths.com/contact-thanks.html</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://silver-smiths.com/404.html</loc>
+    <lastmod>2026-03-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.1</priority>
+  </url>
+
 </urlset>

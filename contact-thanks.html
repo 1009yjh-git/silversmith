@@ -7,13 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description"
         content="Silversmith에 문의하세요. SEO/AEO/GEO 컨설팅, AX·RPA, Ad Monetization, SKT 아웃링크 등 모든 문의를 받습니다." />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="noindex, nofollow" />
     <link rel="canonical" href="https://silver-smiths.com/contact.html" />
     <link rel="alternate" hreflang="ko" href="https://silver-smiths.com/contact.html" />
     <link rel="alternate" hreflang="x-default" href="https://silver-smiths.com/contact.html" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://silver-smiths.com/contact.html" />
-    <meta property="og:title" content="문의하기 — Silversmith" />
+    <meta property="og:url" content="https://silver-smiths.com/contact-thanks.html" />
+    <meta property="og:title" content="문의 접수 완료 — Silversmith" />
     <meta property="og:description" content="Silversmith에 컨설팅·서비스 도입·협업 문의를 남겨주세요." />
     <meta property="og:image" content="https://silver-smiths.com/images/og-image.png" />
     <meta property="og:image:width" content="1200" />
@@ -24,7 +24,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Silversmith" />
     <meta name="twitter:image" content="https://silver-smiths.com/images/og-image.png" />
-    <title>문의하기 — Silversmith</title>
+    <title>문의 접수 완료 — Silversmith</title>
 
     <script type="application/ld+json">
     {
@@ -217,129 +217,24 @@
         <a href="contact.html" class="btn-nav-mobile" style="margin-top:1rem">문의하기</a>
     </div>
 
-    <main style="padding-top: 6rem; padding-bottom: 5rem; min-height: 100vh;">
-        <div class="container-narrow">
-
-            <!-- 브레드크럼 -->
-            <nav class="breadcrumb" aria-label="브레드크럼">
-                <a href="#">홈</a>
-                <span class="breadcrumb-sep" aria-hidden="true">›</span>
-                <span aria-current="page">문의하기</span>
-            </nav>
-
-            <!-- 헤더 -->
-            <div style="margin-bottom: 3rem;">
-                <p class="section-eyebrow" style="margin-bottom: 0.75rem;">Contact Us</p>
-                <h1
-                    style="font-size: clamp(2rem,5vw,3rem); font-weight: 900; letter-spacing: -0.04em; line-height: 1.1; margin-bottom: 1rem;">
-                    함께 성장할<br><span class="accent-silver">프로젝트를 논의</span>해 보세요
-                </h1>
-                <p class="section-desc">컨설팅 문의, 서비스 도입, 협업 제안 모두 환영합니다.<br>빠른 답변을 드리겠습니다. 보통 1~2 영업일 내 회신합니다.</p>
-            </div>
-
-            <!-- 2컬럼 레이아웃 -->
-            <div style="display: grid; grid-template-columns: 1fr 1.4fr; gap: 3rem; align-items: start;">
-
-                <!-- 좌측: 연락처 정보 -->
-                <div>
-                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-                        <div class="card" style="padding: 1.5rem;">
-                            <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">📧</div>
-                            <h2
-                                style="font-size: 0.85rem; font-weight: 700; color: var(--clr-text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.4rem;">
-                                이메일</h2>
-                            <a href="mailto:help@silver-smiths.com"
-                                style="color: var(--clr-accent2); font-weight: 600; font-size: 0.95rem;">help@silver-smiths.com</a>
-                        </div>
-                        <div class="card" style="padding: 1.5rem;">
-                            <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">💬</div>
-                            <h2
-                                style="font-size: 0.85rem; font-weight: 700; color: var(--clr-text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.4rem;">
-                                카카오톡</h2>
-                            <a href="https://open.kakao.com/silversmith" target="_blank" rel="noopener noreferrer"
-                                style="color: #f5d87a; font-weight: 600; font-size: 0.95rem;">카카오톡 오픈채팅 →</a>
-                        </div>
-                        <div class="card" style="padding: 1.5rem;">
-                            <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">⏱️</div>
-                            <h2
-                                style="font-size: 0.85rem; font-weight: 700; color: var(--clr-text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.4rem;">
-                                응답 시간</h2>
-                            <p style="color: var(--clr-text-muted); font-size: 0.875rem; line-height: 1.6;">평일 기준 1~2
-                                영업일 이내<br>긴급 건은 카카오톡 이용 권장</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 우측: 문의 폼 -->
-                <div>
-                    <form id="contact-form" action="https://formsubmit.co/help@silver-smiths.com" method="POST"
-                        class="contact-form" novalidate>
-                        <!-- FormSubmit 설정 -->
-                        <input type="hidden" name="_subject" value="[실버스미스] 홈페이지 문의" />
-                        <input type="hidden" name="_template" value="table" />
-                        <input type="hidden" name="_next" value="https://silver-smiths.com/contact-thanks.html" />
-                        <input type="hidden" name="_captcha" value="false" />
-                        <input type="text" name="_honey" style="display:none" tabindex="-1" />
-
-                        <!-- 문의 항목 -->
-                        <div class="form-group">
-                            <label class="form-label" for="inquiry-type">문의 항목 <span
-                                    style="color:#ef4444">*</span></label>
-                            <select id="inquiry-type" name="문의항목" class="form-control" required>
-                                <option value="" disabled selected>문의 항목을 선택해 주세요</option>
-                                <option value="SEO/AEO/GEO 컨설팅">SEO / AEO / GEO 컨설팅</option>
-                                <option value="AX·RPA 컨설팅">AX · RPA 컨설팅</option>
-                                <option value="Ad Monetization 컨설팅">Ad Monetization 컨설팅</option>
-                                <option value="SKT 아웃링크">SKT 아웃링크</option>
-                                <option value="기타">기타</option>
-                            </select>
-                        </div>
-
-                        <!-- 이메일 -->
-                        <div class="form-group">
-                            <label class="form-label" for="email">이메일 <span style="color:#ef4444">*</span></label>
-                            <input type="email" id="email" name="이메일" class="form-control" placeholder="your@email.com"
-                                required autocomplete="email" />
-                        </div>
-
-                        <!-- 휴대폰 번호 -->
-                        <div class="form-group">
-                            <label class="form-label" for="phone">휴대폰 번호</label>
-                            <input type="tel" id="phone" name="휴대폰번호" class="form-control" placeholder="010-0000-0000"
-                                autocomplete="tel" pattern="[0-9\-]+" />
-                        </div>
-
-                        <!-- 문의 내용 -->
-                        <div class="form-group">
-                            <label class="form-label" for="message">문의 내용 <span style="color:#ef4444">*</span></label>
-                            <textarea id="message" name="문의내용" class="form-control" placeholder="문의하실 내용을 자유롭게 작성해 주세요."
-                                required rows="6"></textarea>
-                        </div>
-
-                        <!-- 개인정보 동의 -->
-                        <div style="display: flex; gap: 0.65rem; align-items: flex-start;">
-                            <input type="checkbox" id="privacy-agree" name="개인정보동의" value="동의" required
-                                style="margin-top: 0.15rem; flex-shrink:0; width:16px; height:16px; accent-color: #3d7fff;" />
-                            <label for="privacy-agree"
-                                style="font-size: 0.82rem; color: var(--clr-text-muted); line-height: 1.5; cursor: pointer;">
-                                <a href="privacy.html" target="_blank"
-                                    style="color: var(--clr-accent2); text-decoration: underline;">개인정보처리방침</a>에 동의하며,
-                                상담 목적으로 개인정보 수집·이용에 동의합니다.
-                            </label>
-                        </div>
-
-                        <!-- 발송 버튼 -->
-                        <button type="submit" class="btn btn-primary" id="submit-btn"
-                            style="width: 100%; justify-content: center; font-size: 1rem; padding: 0.9rem 2rem; margin-top: 0.5rem;">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <line x1="22" y1="2" x2="11" y2="13"></line>
-                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                            </svg>
-                            문의 발송하기
-                        </button>
-                    </form>
-                </div>
+    <main style="padding-top: 8rem; padding-bottom: 8rem; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+        <div class="container-narrow reveal">
+            <div style="font-size: 5rem; margin-bottom: 1.5rem;">🎉</div>
+            <h1 style="font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; line-height: 1.2; margin-bottom: 1.5rem; letter-spacing: -0.05em;">
+                문의가 정상적으로<br><span class="accent-silver">접수되었습니다!</span>
+            </h1>
+            <p style="color: var(--clr-text-muted); font-size: 1.1rem; line-height: 1.7; margin-bottom: 3rem;">
+                남겨주신 내용은 담당자가 꼼꼼히 검토한 후,<br>
+                평일 기준 1~2 영업일 이내에 기재해주신 이메일 혹은 연락처로 빠르게 회신해 드리겠습니다.<br>
+                조금만 기다려 주시면 감사하겠습니다.
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="index.html" class="btn btn-outline" style="padding: 1rem 2rem; font-size: 1.05rem;">
+                    메인 홈으로
+                </a>
+                <a href="story.html" class="btn btn-primary" style="padding: 1rem 2rem; font-size: 1.05rem;">
+                    회사 스토리 보기
+                </a>
             </div>
         </div>
     </main>

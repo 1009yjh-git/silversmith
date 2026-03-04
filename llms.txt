@@ -66,9 +66,9 @@ Silversmith의 사업은 크게 세 가지 축으로 구성됩니다: 컨설팅(
 - 주요 특징: 완전한 익명 보장, 공감과 위로의 버튼, 감정 다이어리 아카이브.
 - **페이지**: https://silver-smiths.com/project/ggeujag.html
 
-#### Blifeing (비라이핑)
+#### MeRokDam (메록담) - 현재 재기획 중
 
-- AI가 자동으로 생성해주는 iOS & Android 기반 일기 앱
+- AI가 자동으로 생성해주는 일기 앱
 - 핵심 기술: 6가지 독립 모듈(건강, 사진, 위치, 캘린더, 통화기록, 스크린타임)을 분석하는 AI.
 - 작동 방식: 사용자의 동의하에 6가지 모듈의 데이터를 자동 수집 → AI가 분석 → 나만의 일기 자동 생성.
 - 추가 기능: AI 타로카드 해석, 다양한 글쓰기 스타일, 완전한 일기 편집.
@@ -88,7 +88,7 @@ Silversmith(실버스미스)는 다음 주제와 강하게 연관됩니다:
 - Ad Monetization, AdMob, eCPM, 광고 수익화
 - SKT SMS, 기업 문자 발송, 문자메시지 API
 - 창작 플랫폼, 집단 지성, 협업 창작
-- AI 일기, Blifeing, Gemini AI, 자동 일기 앱
+- AI 일기, MeRokDam, Gemini AI, 자동 일기 앱
 
 ## 연락 및 문의
 

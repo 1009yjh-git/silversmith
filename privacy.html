@@ -219,7 +219,58 @@
             </div>
 
             <div class="privacy-section">
-                <h2>5. 개인정보 보호 담당 부서</h2>
+                <h2>5. 미록담(MeRokDam) 앱 서비스 관련</h2>
+                <p>회사가 운영하는 'AI 감성 일기' 앱 '미록담(MeRokDam)'은 아래와 같이 개인정보를 수집·이용합니다.</p>
+
+                <h3>수집하는 개인정보 항목</h3>
+                <ul>
+                    <li><strong>건강 데이터</strong>: 걸음 수, 수면 시간, 심박수, 소모 칼로리 (Health Connect / HealthKit 경유, 기기 내 저장)</li>
+                    <li><strong>위치 데이터</strong>: 방문 장소 이력 (Significant Location Changes 기반, 기기 내 저장, 30일 보관 후 자동 삭제)</li>
+                    <li><strong>캘린더</strong>: 일정 제목, 시간, 장소 (기기 내 저장)</li>
+                    <li><strong>사진</strong>: Vision AI 분석 요청 시 이미지 (Gemini API 임시 전송 후 즉시 파기), 피드 게시 선택 시 Supabase 저장</li>
+                    <li><strong>통화 기록</strong>: 통화 건수, 총 시간 (Android 전용, 기기 내 저장)</li>
+                    <li><strong>앱 사용 시간</strong>: 카테고리별 (Android 전용, 기기 내 저장)</li>
+                    <li><strong>일기 원문</strong>: 기기 내 AES-256 암호화 저장 (서버 미전송)</li>
+                    <li><strong>앱 충돌 로그·진단</strong>: Firebase Crashlytics 전송</li>
+                    <li><strong>광고 식별자</strong>: ADID (Android), IDFA (iOS) — 무료 사용자 대상 광고 게재 목적</li>
+                </ul>
+
+                <h3>수집 및 이용 목적</h3>
+                <ul>
+                    <li>AI 일기 생성 서비스 제공</li>
+                    <li>앱 안정성 모니터링 (Firebase Crashlytics)</li>
+                    <li>사용자 일기 텍스트(UGC) 기반 IAB 카테고리 분류를 통한 맞춤 광고 타겟팅 (무료 사용자 대상) — 건강·위치 등 원시 데이터는 광고 목적으로 사용하지 않습니다</li>
+                    <li>소셜 피드 서비스 제공 (사용자가 공개 선택한 게시물)</li>
+                </ul>
+
+                <h3>제3자 제공 현황</h3>
+                <ul>
+                    <li><strong>Firebase Crashlytics (Google)</strong>: 앱 충돌 로그, 기기 진단 정보</li>
+                    <li><strong>Google Ad Manager</strong>: 광고 식별자(ADID/IDFA) — 무료 사용자 광고 게재</li>
+                    <li><strong>Gemini API (Google)</strong>: 일기 생성용 익명화 요약 텍스트, Vision AI 분석 요청 시 이미지(분석 완료 즉시 파기)</li>
+                    <li><strong>Supabase</strong>: 비식별 IAB 태그, 등급 정보, 사용자가 공개 선택한 게시물</li>
+                    <li><strong>OpenWeatherMap</strong>: 날씨 데이터 조회를 위해 현재 위치 좌표(위도/경도)를 일시적으로 전달합니다. 위치 좌표는 OpenWeatherMap 서버에 저장되지 않으며 날씨 정보 반환 후 즉시 처리됩니다.</li>
+                </ul>
+
+                <h3>Health Connect (Android) 전용 정책</h3>
+                <ul>
+                    <li>건강 데이터는 AI 일기 생성 목적으로만 사용하며 광고 타겟팅에 사용하지 않습니다</li>
+                    <li>건강 데이터는 제3자 광고 네트워크와 공유하지 않습니다</li>
+                    <li>건강 데이터는 기기 로컬에만 저장되며 서버로 전송되지 않습니다</li>
+                </ul>
+
+                <h3>데이터 보관 및 삭제</h3>
+                <ul>
+                    <li>건강·캘린더·통화·앱 사용 데이터: 기기 내 암호화 저장, 앱 삭제 또는 계정 탈퇴 시 즉시 삭제</li>
+                    <li>위치 데이터: 수집일로부터 30일 경과 시 자동 삭제</li>
+                    <li>Vision AI 분석 이미지: 분석 완료 즉시 파기 (저장 없음)</li>
+                    <li>계정 탈퇴 시: 기기 내 모든 데이터 및 서버(Supabase) 저장 데이터 전체 삭제</li>
+                    <li>앱 내 '설정 → 계정 탈퇴' 메뉴를 통해 언제든지 데이터 삭제를 요청할 수 있습니다</li>
+                </ul>
+            </div>
+
+            <div class="privacy-section">
+                <h2>6. 개인정보 보호 담당 부서</h2>
                 <p>회사의 본 개인정보처리방침 내용 또는 데이터 취급과 관련하여 문의 사항, 불만 처리, 피해 구제 등이 필요하신 경우 아래의 연락처로 문의해 주시기 바랍니다.</p>
                 <ul>
                     <li><strong>책임자/담당부서</strong>: 개인정보 보호 담당부서</li>
